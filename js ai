@@ -1,0 +1,14 @@
+function askAI() {
+  const question = document.getElementById("questionInput").value.toLowerCase();
+  const responseBox = document.getElementById("response");
+
+  if (question.includes("amazonie")) {
+    responseBox.innerText = "L'Amazonie subit une déforestation massive liée à l'agriculture et l'exploitation du bois.";
+  } else if (question.includes("asie") || question.includes("indonésie")) {
+    responseBox.innerText = "L'Asie du Sud-Est perd de vastes surfaces forestières à cause des plantations de palmiers à huile.";
+  } else if (question.includes("solutions")) {
+    responseBox.innerText = "Reboisement, consommation responsable, éducation et politiques écologiques sont essentielles.";
+  } else {
+    responseBox.innerText = "Désolé, je n'ai pas encore la réponse à cette question — mais je m'améliore chaque jour ! 🌍";
+  }
+}
